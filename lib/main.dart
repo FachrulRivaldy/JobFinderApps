@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'signin.dart';
+import 'chat.dart';
+import 'profile.dart';
+import 'jobdetail.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,24 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Job Application',
-      theme: ThemeData(
-        primarySwatch: Colors.red,
-      ),
-      home: MyHomePage(),
+      home: SignInPage(),
     );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
